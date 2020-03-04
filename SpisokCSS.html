@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SpisokCSS</title>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+        }
+        nav {
+            width: 100%;
+            background: #b4be14;
+            font-family: Didact Gothic;
+            font-size: 23px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            margin:  0;
+        }
+         li {
+            display: inline-block;
+             padding: 20px;
+            transition-duration: 0.5s;
+            position: relative;
+            background: #b4be14;
+        }
+        li:hover {
+            background: white;
+        }
+        ul {
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        ul li ul {
+            display: none;
+            position: absolute;
+            background: #b4be14;
+            left: 0;
+            margin-top: 20px;
+        }
+        ul li:hover> ul {
+            display: block;
+        }
+        ul li ul li {
+            text-align: left;
+            width: 100%;
+        }
+        .drop {
+            padding-left: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+<nav>
+    <h1>Дни недели</h1>
+    <ul class="main">
+        <li><a href="#">Понедельник</a></li>
+        <li><a href="#">Вторник</a>
+            <ul class="drop">
+                <li><a href="#">Утро</a></li>
+                <li><a href="#">День</a></li>
+                <li><a href="#">Вечер</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Среда</a></li>
+        <li><a href="#">Четверг</a></li>
+        <li><a href="#">Пятница</a></li>
+        <li><a href="#">Cуббота</a></li>
+        <li><a href="#">Воскресенье</a></li>
+
+    </ul>
+</nav>
+
+
+</body>
+</html>
